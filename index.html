@@ -1,28 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aj Ramirez</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://aj-ramirez.github.io/The-Portfolio/images/favicon.svg" type="image/x-icon">
-   
+
+    <title>Aj Ramirez | Front-End Developer & UI/UX Designer Portfolio</title>
+
+    <meta name="description" content="Aj Ramirez is a Front-End Developer and UI/UX Designer from the Philippines specializing in responsive websites, Adobe Experience Manager (AEM), React, HTML, CSS, JavaScript, accessibility, and modern web experiences.">
+    <meta name="keywords" content="Aj Ramirez, Frontend Developer, Front-End Developer, UI Designer, UX Designer, Web Developer Philippines, AEM Developer, HTML, CSS, JavaScript, React, Portfolio">
+    <meta name="author"  content="Aj Ramirez">
+    <meta name="robots"  content="index, follow">
+    <meta name="theme-color"  content="#111111">
+    <link rel="canonical" href="https://aj-ramirez.github.io/The-Portfolio/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aj Ramirez | Front-End Developer & UI/UX Designer">
+    <meta property="og:description" content="Explore the portfolio of Aj Ramirez featuring responsive websites, UI/UX design, front-end development, HTML email development, and modern web experiences.">
+    <meta property="og:image" content="https://aj-ramirez.github.io/The-Portfolio/images/og-image.jpg">
+    <meta property="og:url" content="https://aj-ramirez.github.io/The-Portfolio/">
+    <meta property="og:site_name" content="Aj Ramirez Portfolio">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Aj Ramirez | Front-End Developer & UI/UX Designer">
+    <meta name="twitter:description" content="Frontend Developer and UI/UX Designer building modern web experiences.">
+    <meta name="twitter:image" content="https://aj-ramirez.github.io/The-Portfolio/images/og-image.jpg">
+
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://cdn.lordicon.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Person",
+            "name":"Aj Ramirez",
+            "url":"https://aj-ramirez.github.io/The-Portfolio/",
+            "jobTitle":"Front-End Developer",
+            "image":"https://aj-ramirez.github.io/The-Portfolio/images/me.jpg",
+            "email":"mailto:art.joseph.nallatan.ramirez@gmail.com",
+            "address":{
+            "@type":"PostalAddress",
+            "addressLocality":"Quezon City",
+            "addressCountry":"Philippines"
+            },
+            "sameAs":[
+            "https://www.linkedin.com/in/itsajramirez/",
+            "https://github.com/Aj-Ramirez",
+            "https://www.behance.net/ajramirez"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Aj Ramirez Portfolio",
+            "url":"https://aj-ramirez.github.io/The-Portfolio/",
+            "author":{
+                "@type":"Person",
+                "name":"Aj Ramirez"
+            }
+        }
+    </script>
+
+    <link rel="dns-prefetch" href="//cdn.lordicon.com">
+    <link rel="dns-prefetch" href="//unpkg.com">
 </head>
+
 <body>
+    <div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
     <main>
         <aside class="sidebar " data-sidebar>
             <div class="sidebar-info">
                 <figure class="avatar-box">
-                    <img src="images/me.jpg" alt="avatar" width="80">
+                    <img src="images/me.jpg" alt="Aj Ramirez - Front-End Developer & UI/UX Designer" loading="lazy" width="80">
                 </figure>
 
                 <div class="info-content">
                     <h1 class="name" title="Aj Ramirez">Aj Ramirez</h1>
-                    <p class="title">Web Developer & Designer</p>
+                    <p class="title">Front-End Developer & UI/UX Designer</p>
                 </div>
 
                 <button class="info-more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
+                    <span>Show Info</span>
                     <ion-icon name="chevron-down"></ion-icon>
                 </button>
             </div>
@@ -45,7 +111,7 @@
                         <div class="contact-info">
                             <p class="contact-title">Email</p>
 
-                            <a href="mailto:art.joseph.nallatan.ramirez@gmail.com" class="contact-link">art.joseph.nallatan.ramirez@gmail.com</a>
+                            <a href="mailto:art.joseph.nallatan.ramirez@gmail.com" aria-label="Send an email to Aj Ramirez" class="contact-link">art.joseph.nallatan.ramirez@gmail.com</a>
                         </div>
                     </li>
 
@@ -63,7 +129,7 @@
                         <div class="contact-info">
                             <p class="contact-title">Phone</p>
 
-                            <a href="tel:+12133522795" class="contact-link">+63 (960) 253-2509</a>
+                            <a href="tel:+12133522795" aria-label="Call Aj Ramirez" class="contact-link">+63 (960) 253-2509</a>
                         </div>
                     </li>
 
@@ -81,7 +147,7 @@
                         <div class="contact-info">
                             <p class="contact-title">Birthday</p>
 
-                            <time datetime="1982-06-23">Aug 20, 1999</time>
+                            <time datetime="1999-08-20">Aug 20, 1999</time>
                         </div>
                     </li>
 
@@ -98,8 +164,9 @@
 
                         <div class="contact-info">
                             <p class="contact-title">Location</p>
-
-                            <address>Quezon City, Metro Manila, Philippines</address>
+                            <a href="https://maps.app.goo.gl/AAAxydVo6EK71Lvh6" aria-label="View Quezon City location on Google Maps" target="_blank" rel="noopener noreferrer">
+                                <address>Quezon City, Metro Manila, Philippines</address>
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -107,10 +174,10 @@
                 <div class="separator"></div>
 
                 <ul class="social-list">
-                    <li class="social-item"><a href="https://www.facebook.com/its.aj.ramirez.klxt/" class="social-link" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://www.instagram.com/_zupjii/" class="social-link" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://www.linkedin.com/in/itsajramirez/" class="social-link" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <li class="social-item"><a href="https://www.behance.net/ajramirez" class="social-link" target="_blank"><ion-icon name="logo-behance"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.facebook.com/its.aj.ramirez.klxt/" aria-label="Facebook Link" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://github.com/Aj-Ramirez/" aria-label="Github Link" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/in/itsajramirez/" aria-label="LinkedIn Link" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.behance.net/ajramirez" aria-label="Behance Link" class="social-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-behance"></ion-icon></a></li>
                 </ul>
             </div>
         </aside>
@@ -141,9 +208,17 @@
                 </header>
 
                 <section class="about-text">
-                    <p>I'm a Front-End Developer and UI/UX Designer based in the Philippines, passionate about creating modern, responsive, and user-centered digital experiences. I enjoy transforming ideas and complex challenges into clean, intuitive, and visually engaging interfaces.
+                    <p>
+                        Hi! I'm a <span class="fun-title"><b>Front-End Developer with the heart of a Designer</b></span> based in the Philippines. I love creating modern, responsive, and user-friendly websites that not only look great but also feel effortless to use.
                         <br><br>
-                    My goal is to build websites that are not only functional and accessible but also aesthetically appealing and easy to use. I focus on crafting seamless user experiences while ensuring every project reflects the brand's identity and delivers meaningful value to its audience.</p>
+                        One of my favorite parts of the process is designing a website and then bringing it to life through code. There's something incredibly rewarding about seeing an idea grow from a simple concept into a fully interactive experience.
+                        <br><br>
+                        I also enjoy working with people just as much as I enjoy building products. Collaborating with designers, content editors, developers, project managers, and stakeholders helps keep ideas flowing, communication clear, and the entire workflow running smoothly. I believe the best results come from teams that build together.
+                        <br><br>
+                        Whether I'm designing interfaces, writing clean front-end code, or refining the little details, my goal is always the same—to create digital experiences that are intuitive, accessible, visually engaging, and meaningful for the people who use them.
+                        <br><br>
+                        Thanks for stopping by. I hope you enjoy exploring my work as much as I enjoyed creating it.
+                    </p>
                 </section>
 
                 <section class="service">
@@ -221,7 +296,7 @@
                 </section>
 
                 <section class="testimonials">
-                    <h3 class="h3 testimonials-title">How do I work my craft</h3>
+                    <h3 class="h3 testimonials-title">How I Approach My Work</h3>
 
                     <ul class="testimonials-list has-scrollbar">
                         <li class="testimonials-item">
@@ -419,67 +494,73 @@
 
                     <ul class="clients-list has-scrollbar">
                         <li class="clients-item">
-                            <a href="#" title="HTML5">
+                            <a href="javascript:void(0);" title="HTML5">
                                 <img src="images/html.png" alt="HTML5">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="CSS3">
+                            <a href="javascript:void(0);" title="CSS3">
                                 <img src="images/css.png" alt="CSS3">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="JavaScript">
+                            <a href="javascript:void(0);" title="JavaScript">
                                 <img src="images/js.png" alt="JavaScript">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="Figma">
+                            <a href="javascript:void(0);" title="Figma">
                                 <img src="images/figma.png" alt="Figma">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="Photoshop">
+                            <a href="javascript:void(0);" title="Postman">
+                                <img src="images/postman.png" alt="Postman">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="javascript:void(0);" title="Photoshop">
                                 <img src="images/psd.png" alt="Photoshop">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="Illustrator">
+                            <a href="javascript:void(0);" title="Illustrator">
                                 <img src="images/ai.png" alt="Illustrator">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="Adobe XD">
+                            <a href="javascript:void(0);" title="Adobe XD">
                                 <img src="images/xd.png" alt="Adobe XD">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="Tailwind CSS">
+                            <a href="javascript:void(0);" title="Tailwind CSS">
                                 <img src="images/tailwind.png" alt="Tailwind CSS">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="Sass">
+                            <a href="javascript:void(0);" title="Sass">
                                 <img src="images/sass.png" alt="Sass">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="React">
+                            <a href="javascript:void(0);" title="React">
                                 <img src="images/react.png" alt="React">
                             </a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" title="Java">
+                            <a href="javascript:void(0);" title="Java">
                                 <img src="images/java.png" alt="Java">
                             </a>
                         </li>
@@ -505,7 +586,15 @@
 
                 <section class="timeline">
                     <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+                        <div class="icon-box">
+                            <!-- <ion-icon name="book-outline"></ion-icon> -->
+                             <lord-icon
+                                src="https://cdn.lordicon.com/srupsmbe.json"
+                                trigger="hover"
+                                colors="primary:#e4e4e4,secondary:#3080e8"
+                                style="width:250px;height:250px">
+                            </lord-icon>
+                        </div>
 
                         <h3 class="h3">Experience</h3>
                     </div>
@@ -514,26 +603,40 @@
                         <li class="timeline-item">
                             <h4 class="h4 timeline-item-title">Web Master / Fullstack Developer</h4>
                             <span>OCT 2023 - Present</span>
-                            <p class="timeline-text">Designed, developed, and maintained responsive web experiences using HTML, CSS, JavaScript, Java, and Adobe Experience Manager (AEM). Improved website performance, usability, and SEO through front-end enhancements, cross-browser testing, Google Tag Manager implementation, and close collaboration with cross-functional teams to deliver scalable, high-quality digital solutions.</p>
+                            <p class="timeline-text">Developed and maintained responsive web experiences using HTML, CSS, JavaScript, Java, and Adobe Experience Manager (AEM). Created reusable AEM components that empowered content editors and creative teams to efficiently manage and publish content, while implementing front-end optimizations, cross-browser compatibility, and Google Tag Manager integrations to improve website performance, usability, and SEO. Collaborated with cross-functional teams to deliver scalable, high-quality digital experiences that increased content management efficiency and overall site reliability.</p>
                         </li>
 
                         <li class="timeline-item">
                             <h4 class="h4 timeline-item-title">Web Designer & Developer</h4>
                             <span>JUL 2022 - AUG 2023</span>
-                            <p class="timeline-text">Collaborated with developers, project managers, and stakeholders to design, develop, and maintain responsive websites for international clients. Specialized in creating user-centered interfaces with Figma, Adobe XD, and Photoshop, and building accessible, mobile-first web experiences using HTML, CSS, and JavaScript. Delivered HTML email campaigns, implemented SEO best practices, conducted cross-browser and accessibility testing, resolved client issues, and mentored team members to ensure high-quality, scalable digital solutions.</p>
+                            <p class="timeline-text">Collaborated with developers, project managers, and stakeholders to design, develop, and maintain responsive websites for international clients. Translated business and user requirements into accessible, mobile-first interfaces using Figma, Adobe XD, Photoshop, HTML, CSS, and JavaScript, while delivering HTML email campaigns, implementing SEO best practices, performing cross-browser and accessibility testing, and resolving client issues. Contributed to scalable, high-quality digital solutions that enhanced user experience, streamlined project delivery, and ensured consistent performance across devices and browsers.</p>
                         </li>
 
                         <li class="timeline-item">
                             <h4 class="h4 timeline-item-title">Creative Designer</h4>
                             <span>JAN 2022 - JUN 2022</span>
-                            <p class="timeline-text">Designed visually compelling print and digital assets, including branding materials, marketing collateral, presentation graphics, and social media content. Collaborated with cross-functional teams to deliver cohesive visual solutions that strengthened brand identity, enhanced audience engagement, and effectively communicated organizational objectives.</p>
+                            <p class="timeline-text">Designed and produced print and digital creative assets, including branding materials, marketing collateral, presentation graphics, and social media content. Partnered with cross-functional teams to develop cohesive visual solutions that aligned with business goals and brand standards, resulting in stronger brand consistency, increased audience engagement, and more effective communication across digital and print channels.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Game UI/UX Designer & Developer</h4>
+                            <span>OCT 2021 - JUL 2022</span>
+                            <p class="timeline-text">Designed and developed immersive game user experiences by applying UX design principles, prototyping, and front-end development to create engaging and intuitive gameplay. Created game prototypes, storyboards, wireframes, and interactive mockups in Figma to validate concepts and streamline development, while leading the design team in implementing user-centered UI/UX strategies. Conducted user research, usability testing, and iterative design improvements to optimize accessibility, navigation, and player interaction, resulting in more intuitive gameplay experiences, stronger visual consistency, and higher-quality project deliverables.</p>
                         </li>
                     </ol>
                 </section>
 
                 <section class="timeline">
                     <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+                        <div class="icon-box">
+                            <!-- <ion-icon name="book-outline"></ion-icon> -->
+                             <lord-icon
+                                src="https://cdn.lordicon.com/rrbmabsx.json"
+                                trigger="hover"
+                                colors="primary:#e4e4e4,secondary:#3080e8"
+                                style="width:250px;height:250px">
+                            </lord-icon>
+                        </div>
 
                         <h3 class="h3">Education</h3>
                     </div>
@@ -556,12 +659,12 @@
                 </section>
 
                 <section class="skill">
-                    <h3 class="h3 skills-title">Techinical Skills</h3>
+                    <h3 class="h3 skills-title">Technical Skills</h3>
                         <ul class="skills-list">
 
                             <li>
                                 <strong>Front-End Development:</strong>
-                                HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, Sass/SCSS,
+                                HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, Sass/Scss, Postman API,
                                 jQuery, AJAX, Responsive Web Design, Cross-Browser Compatibility
                             </li>
 
@@ -601,6 +704,61 @@
                                 React.js, TypeScript, Java
                             </li>
 
+                        </ul>
+
+                        <br><br>
+                    <h3 class="h3 skills-title">Soft Skills</h3>
+                        <ul class="skills-list">
+
+                            <li>
+                                <strong>Problem Solving:</strong>
+                                I enjoy turning complex ideas into simple, intuitive, and user-friendly solutions.
+                            </li>
+
+                            <li>
+                                <strong>Creative & Critical Thinking: </strong>
+                                I combine creativity with critical thinking to build thoughtful experiences, always keeping the user's needs at the center of every decision.
+                            </li>
+
+                            <li>
+                                <strong>Communication: </strong>
+                                I believe clear communication is key to successful projects, whether I'm collaborating with developers, designers, or stakeholders.
+                            </li>
+
+                            <li>
+                                <strong>Cross-Functional Collaboration: </strong>
+                                I enjoy working with cross-functional teams, sharing ideas, and building great products together.
+                            </li>
+
+                            <li>
+                                <strong>Attention to Detail: </strong>
+                                I care about the little things—from clean code to pixel-perfect interfaces that work consistently across devices.
+                            </li>
+
+                            <li>
+                                <strong>User-Centered Mindset: </strong>
+                                Every design and development decision I make is focused on creating a smooth, accessible, and enjoyable experience for users.
+                            </li>
+
+                            <li>
+                                <strong>Adaptability: </strong>
+                                I embrace new technologies, workflows, and challenges, and I'm always ready to learn and grow.
+                            </li>
+
+                            <li>
+                                <strong>Ownership & Accountability: </strong>
+                                I take pride in my work, stay accountable, and see projects through from concept to completion.
+                            </li>
+
+                            <li>
+                                <strong>Innovative Thinking: </strong>
+                                I'm always looking for smarter ways to solve problems and create experiences that are both modern and meaningful.
+                            </li>
+
+                            <li>
+                                <strong>Continuous Learning: </strong>
+                                Technology never stands still, and neither do I. I'm always exploring new tools, trends, and best practices to keep improving as a developer and designer.
+                            </li>
                         </ul>
 
                     <!-- <ul class="skills-list content-card">
@@ -672,7 +830,8 @@
                         <li class="filter-item"><button data-filter-btn>Applications</button></li>
                         <li class="filter-item"><button data-filter-btn>Web Development</button></li>
                         <li class="filter-item"><button data-filter-btn>Html Email</button></li>
-                        <li class="filter-item"><button data-filter-btn>In Progress Project</button></li>
+                        <li class="filter-item"><button data-filter-btn>Graphic Design</button></li>
+                        <li class="filter-item"><button data-filter-btn>Work In Progress</button></li>
                     </ul>
 
                     <div class="filter-select-box">
@@ -689,35 +848,51 @@
                             <li class="select-item"><button data-select-item>Web Design</button></li>
                             <li class="select-item"><button data-select-item>Applications</button></li>
                             <li class="select-item"><button data-select-item>Web Development</button></li>
-                            <li class="select-item"><button data-filter-btn>Html Email</button></li>
-                            <li class="select-item"><button data-select-item>In Progress Project</button></li>
+                            <li class="select-item"><button data-select-item>Html Email</button></li>
+                            <li class="select-item"><button data-select-item>Graphic Design</button></li>
+                            <li class="select-item"><button data-select-item>Work In Progress</button></li>
                         </ul>
                     </div>
 
                     <ul class="project-list">
-                        <li class="project-item active" data-filter-item data-category="in progress project">
-                            <a href="https://aj-ramirez.github.io/The-Portfolio/" target="_blank">
+                        <li class="project-item active" data-filter-item data-category="work in progress">
+                            <a href="https://aj-ramirez.github.io/The-Portfolio/" aria-label="Aj Ramirez Portfolio Homepage" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                         <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
-
-                                    <img src="images/portfolio-revamp.png" alt="metaspark" loading="lazy">
+                                    <img src="images/portfolio-revamp.png" alt="Aj Ramirez Portfolio Homepage" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Portfolio Revamp</h3>
-                                <p class="project-category">In Progress Project</p>
+                                <p class="project-category">Work In Progress</p>
                             </a>
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/The-Portfolio/Design_Archives/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/The-Portfolio/Design_Archives/" aria-label="Design Archives Website" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/design-archives.png" alt="finance" loading="lazy">
+                                    <img src="images/design-archives.png" alt="Design Archives Website" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Design Archives</h3>
@@ -726,13 +901,21 @@
                         </li>
  
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/The-Portfolio/The_Realty/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/The-Portfolio/The_Realty/" aria-label="The Realty Real Estate Landing Page" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                          <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/realty.png" alt="finance" loading="lazy">
+                                    <img src="images/realty.png" alt="The Realty Real Estate Landing Page" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Realty</h3>
@@ -741,13 +924,21 @@
                         </li>
  
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/The-Portfolio/FitNest/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/The-Portfolio/FitNest/" aria-label="FitNest Fitness Website" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                         <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/fitnest.png" alt="finance" loading="lazy">
+                                    <img src="images/fitnest.png" alt="FitNest Fitness Website" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">FitNest</h3>
@@ -756,13 +947,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/mrgreenbook/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/mrgreenbook/" aria-label="mrgbook" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/mrgbook.png" alt="finance" loading="lazy">
+                                    <img src="images/mrgbook.png" alt="mrgbook" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Mrgreen Book</h3>
@@ -771,13 +970,21 @@
                         </li>
  
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/888club/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/888club/" aria-label="888Club" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/888.png" alt="finance" loading="lazy">
+                                    <img src="images/888.png" alt="888 Club Website Development Project" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">888 Club</h3>
@@ -786,13 +993,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/Simple-Crud-Local-Storage/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/Simple-Crud-Local-Storage/" aria-label="Simple Crud" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/simplecrud.png" alt="finance" loading="lazy">
+                                    <img src="images/simplecrud.png" alt="simplecrud" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Simple Crud</h3>
@@ -801,13 +1016,21 @@
                         </li>
                          
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/Pabahay/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/Pabahay/" aria-label="Pabahay" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/pabahay.png" alt="finance" loading="lazy">
+                                    <img src="images/pabahay.png" alt="pabahay" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Pabahay</h3>
@@ -816,28 +1039,21 @@
                         </li>
  
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/Drip-Love-Ph-Landing-Page-/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/uxdesign/" aria-label="MiniWebsite" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/driplove.png" alt="finance" loading="lazy">
-                                </figure>
-
-                                <h3 class="project-title">DripLove Ph</h3>
-                                <p class="project-category">Web Development</p>
-                            </a>
-                        </li>
- 
-                        <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/uxdesign/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-
-                                    <img src="images/miniwebsite.png" alt="finance" loading="lazy">
+                                    <img src="images/miniwebsite.png" alt="miniwebsite" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Mini Porfolio</h3>
@@ -846,13 +1062,21 @@
                         </li>
  
                         <li class="project-item active" data-filter-item data-category="web development">
-                            <a href="https://aj-ramirez.github.io/souvenir-haven/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/souvenir-haven/" aria-label="souvenir-haven" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/souvernir-haven.png" alt="finance" loading="lazy">
+                                    <img src="images/souvernir-haven.png" alt="souvenir-haven" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Souvenir Haven</h3>
@@ -861,13 +1085,21 @@
                         </li>
  
                         <li class="project-item active" data-filter-item data-category="web design">
-                            <a href="https://www.figma.com/proto/ogHIZUPj06H97AwWF5m93P/Bakeshop-website-redesign?node-id=2-479&p=f&viewport=2542%2C1516%2C0.57&t=bqLDLZNuWDf2b7Ok-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">
+                            <a href="https://www.figma.com/proto/ogHIZUPj06H97AwWF5m93P/Bakeshop-website-redesign?node-id=2-479&p=f&viewport=2542%2C1516%2C0.57&t=bqLDLZNuWDf2b7Ok-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" aria-label="Breadily Bakery Website UI Design" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                         <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/breadily.png" alt="fundo" loading="lazy">
+                                    <img src="images/breadily.png" alt="Breadily Bakery Website UI Design" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Breadily</h3>
@@ -876,13 +1108,21 @@
                         </li>
                         
                         <li class="project-item active" data-filter-item data-category="web design">
-                            <a href="https://www.figma.com/proto/HboBR1c0SfwIXp5FwSrv9n/Votanica-Website?node-id=105-3&viewport=-3385%2C293%2C1.01&t=5hnENmGB7xvNTYmm-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">
+                            <a href="https://www.figma.com/proto/HboBR1c0SfwIXp5FwSrv9n/Votanica-Website?node-id=105-3&viewport=-3385%2C293%2C1.01&t=5hnENmGB7xvNTYmm-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" aria-label="Votanica" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/votanica.png" alt="dsm." loading="lazy">
+                                    <img src="images/votanica.png" alt="votanica" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Votanica</h3>
@@ -891,13 +1131,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="web design">
-                            <a href="https://www.figma.com/proto/IPhVSgZhbX5jGmxWTtyi7O/Plateria?node-id=1-2&viewport=545%2C-164%2C0.24&t=oZ7FNhyO04LFSbJK-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">
+                            <a href="https://www.figma.com/proto/IPhVSgZhbX5jGmxWTtyi7O/Plateria?node-id=1-2&viewport=545%2C-164%2C0.24&t=oZ7FNhyO04LFSbJK-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" aria-label="Plateria Web Design" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/plateria.png   " alt="metaspark" loading="lazy">
+                                    <img src="images/plateria.png" alt="plateria" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Plateria</h3>
@@ -906,13 +1154,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="web design">
-                            <a href="https://www.figma.com/proto/X4699uCpVMf4iES0CA9QxC/Design-Certification-Landing-Page?node-id=1-2&p=f&viewport=485%2C85%2C0.17&t=PBfJbvvs3Hx5ksQU-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1" target="_blank">
+                            <a href="https://www.figma.com/proto/X4699uCpVMf4iES0CA9QxC/Design-Certification-Landing-Page?node-id=1-2&p=f&viewport=485%2C85%2C0.17&t=PBfJbvvs3Hx5ksQU-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1" aria-label="victor-aloha" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/victor-aloha.png" alt="fundo" loading="lazy">
+                                    <img src="images/victor-aloha.png" alt="victor-aloha" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Victor Aloha</h3>
@@ -921,13 +1177,44 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="web design">
-                            <a href="https://www.figma.com/proto/gIKUmuUU4vSCUa4U2hrgTM/Redesign-SSS-Website?node-id=2-4&viewport=-1688%2C2386%2C0.61&t=8HdA2dT8u83FVRfk-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A4&page-id=0%3A1" target="_blank">
+                            <a href="https://www.behance.net/gallery/147533271/Web-Design" aria-label="freshbeats" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/sss.png" alt="fundo" loading="lazy">
+                                    <img src="images/freshbeats.png" alt="freshbeats" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Fresh Beats Mock Up</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="https://www.figma.com/proto/gIKUmuUU4vSCUa4U2hrgTM/Redesign-SSS-Website?node-id=2-4&viewport=-1688%2C2386%2C0.61&t=8HdA2dT8u83FVRfk-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A4&page-id=0%3A1" aria-label="SSS website" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
+                                    </div>
+
+                                    <img src="images/sss.png" alt="sss" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">SSS Redesign</h3>
@@ -936,13 +1223,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="web design">
-                            <a href="https://www.figma.com/proto/I9uVqoTiLxaYbSuGTucMXa/Motion-Dance-Studio---High-Fidelity-Prototype?node-id=1-2&p=f&viewport=435%2C441%2C0.07&t=E9qp5bAkWBbzFODT-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A2&page-id=0%3A1" target="_blank">
+                            <a href="https://www.figma.com/proto/I9uVqoTiLxaYbSuGTucMXa/Motion-Dance-Studio---High-Fidelity-Prototype?node-id=1-2&p=f&viewport=435%2C441%2C0.07&t=E9qp5bAkWBbzFODT-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A2&page-id=0%3A1" target="_blank" aria-label="motion dance" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/dance.png" alt="fundo" loading="lazy">
+                                    <img src="images/dance.png" alt="motion dance" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Motion Dance</h3>
@@ -950,14 +1245,183 @@
                             </a>
                         </li>
 
-                        <li class="project-item active" data-filter-item data-category="applications">
-                            <a href="https://www.figma.com/proto/Yh2gF14JQf7C2Hj6Eeh1qZ/BreadHub?node-id=42-184&p=f&viewport=201%2C302%2C0.28&t=BLaWzOC5lCzr7fJG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A139&page-id=0%3A1" target="_blank">
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <a href="https://www.behance.net/gallery/147454799/PowerPoint-Presentation-of-JumpJam" aria-label="JumpJam PowerPoint Presentation Design"  target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/breadhub.png" alt="brawlhalla" loading="lazy">
+                                    <img src="images/jumpjampptx.png" alt="JumpJam PowerPoint Presentation Design" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">JumpJam PPTX</h3>
+                                <p class="project-category">Graphic Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <a href="https://www.behance.net/gallery/147535629/UI-and-UX-Design-of-Game-JumpJam" aria-label="UI-and-UX-Design-of-Game-JumpJam" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
+                                    </div>
+
+                                    <img src="images/jjdemoapp.png" alt="UI-and-UX-Design-of-Game-JumpJam" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">JumpJam Demo Application</h3>
+                                <p class="project-category">Graphic Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <a href="https://www.behance.net/gallery/144949965/JumpJam-Users-Manual" aria-label="JumpJam-Users-Manual" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
+                                    </div>
+
+                                    <img src="images/jjmanual.png" alt="JumpJam-Users-Manual" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">JumpJam Manual Design</h3>
+                                <p class="project-category">Graphic Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <a href="https://www.behance.net/gallery/144952617/Blesds-Logo" aria-label="Blesds-Logo" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
+                                    </div>
+
+                                    <img src="images/qcubless.png" alt="Blesds-Logo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">QCU Blesds Shirt & Logo</h3>
+                                <p class="project-category">Graphic Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <a href="https://www.behance.net/gallery/135535307/BIP-Banana-Island-Pride-Shirt-Design" aria-label="BIP-Banana-Island-Pride-Shirt-Design" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
+                                    </div>
+
+                                    <img src="images/bip.png" alt="BIP-Banana-Island-Pride-Shirt-Design" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">BIP Shirt & Logo</h3>
+                                <p class="project-category">Graphic Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <a href="https://www.behance.net/gallery/144953471/GAD-Logo-And-Tarpaulin-Design" aria-label="GAD-Logo-And-Tarpaulin-Design" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
+                                    </div>
+
+                                    <img src="images/gad.png" alt="GAD-Logo-And-Tarpaulin-Design" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">GAD Logo & Tarpaulin</h3>
+                                <p class="project-category">Graphic Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="https://github.com/Aj-Ramirez/JumpJam" aria-label="JumpJam" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
+                                    </div>
+
+                                    <img src="images/JumpJam.png" alt="JumpJam" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">JumpJam</h3>
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="https://www.figma.com/proto/Yh2gF14JQf7C2Hj6Eeh1qZ/BreadHub?node-id=42-184&p=f&viewport=201%2C302%2C0.28&t=BLaWzOC5lCzr7fJG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A139&page-id=0%3A1" aria-label="breadhub" target="_blank" rel="noopener noreferrer">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
+                                    </div>
+
+                                    <img src="images/breadhub.png" alt="breadhub" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">BreadHub</h3>
@@ -966,13 +1430,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="applications">
-                            <a href="https://www.figma.com/proto/ic5UhauxeowoVwmneeaunx/Coffee-Blends?node-id=2-153&p=f&viewport=410%2C436%2C0.13&t=2KYZKI7tNJgRzBKb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A125&page-id=0%3A1" target="_blank">
+                            <a href="https://www.figma.com/proto/ic5UhauxeowoVwmneeaunx/Coffee-Blends?node-id=2-153&p=f&viewport=410%2C436%2C0.13&t=2KYZKI7tNJgRzBKb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A125&page-id=0%3A1" aria-label="Coffee Blends Mobile App UI" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                     <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/coffeeblends.png" alt="brawlhalla" loading="lazy">
+                                    <img src="images/coffeeblends.png" alt="Coffee Blends Mobile App UI" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Coffee Blends</h3>
@@ -981,13 +1453,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="html email">
-                            <a href="https://aj-ramirez.github.io/html-email/Email1/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/html-email/Email1/" aria-label="email1" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/email1.png" alt="metaspark" loading="lazy">
+                                    <img src="images/email1.png" alt="email1" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Email: Denver Center</h3>
@@ -996,13 +1476,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="html email">
-                            <a href="https://aj-ramirez.github.io/html-email/Email2/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/html-email/Email2/" aria-label="email2" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/email2.png" alt="metaspark" loading="lazy">
+                                    <img src="images/email2.png" alt="email2" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Email: Marina Square</h3>
@@ -1011,13 +1499,21 @@
                         </li>
 
                         <li class="project-item active" data-filter-item data-category="html email">
-                            <a href="https://aj-ramirez.github.io/html-email/Email3/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/html-email/Email3/" aria-label="email3"  target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                         <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/email3.png" alt="metaspark" loading="lazy">
+                                    <img src="images/email3.png" alt="email3" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Email: YMCA</h3>
@@ -1025,13 +1521,21 @@
                             </a>
                         </li>
                         <li class="project-item active" data-filter-item data-category="html email">
-                            <a href="https://aj-ramirez.github.io/html-email/Email4/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/html-email/Email4/" aria-label="email4" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/email4.png" alt="metaspark" loading="lazy">
+                                    <img src="images/email4.png" alt="email4" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Email: Skagit</h3>
@@ -1039,13 +1543,21 @@
                             </a>
                         </li>
                         <li class="project-item active" data-filter-item data-category="html email">
-                            <a href="https://aj-ramirez.github.io/html-email/Email5/" target="_blank">
+                            <a href="https://aj-ramirez.github.io/html-email/Email5/" aria-label="email5" target="_blank" rel="noopener noreferrer">
                                 <figure class="project-img">
                                     <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/hmqxevgf.json"
+                                            trigger="hover"
+                                            delay="1500"
+                                            stroke="bold"
+                                            state="hover-slide"
+                                            colors="primary:#e4e4e4,secondary:#66a1ee"
+                                            style="width:30px;height:30px">
+                                        </lord-icon>
                                     </div>
 
-                                    <img src="images/email5.png" alt="metaspark" loading="lazy">
+                                    <img src="images/email5.png" alt="email5" loading="lazy">
                                 </figure>
 
                                 <h3 class="project-title">Email: Black Bear Diner</h3>
@@ -1057,7 +1569,7 @@
                 </section>
             </article>
 
-            <article class="blog " data-page="blog">
+            <!-- <article class="blog " data-page="blog">
                 <header>
                     <h2 class="h2 article-title">Blog</h2>
                 </header>
@@ -1180,7 +1692,7 @@
                         </li>
                     </ul>
                 </section>
-            </article>
+            </article> -->
 
             <article class="contact " data-page="contact">
                 <header class="article-title">
@@ -1242,8 +1754,12 @@
                         <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
 
                         <button class="form-btn" type="submit" disabled data-form-btn>
-                            <ion-icon name="paper-plane"></ion-icon>
-                            <span>Send Message</span>
+                            <!-- <ion-icon name="paper-plane"></ion-icon> -->
+                            <span class="txt">Send Message</span>
+                            <span class="txt2">sent!</span>
+                            <span class="loader-container">
+                                <span class="loader"></span>
+                            </span>
                         </button>
                     </form>
                     <p id="form-status"></p>
@@ -1252,23 +1768,22 @@
         </div>
     </main>
 
-            <script src="https://unpkg.com/lenis@1.3.14/dist/lenis.min.js"></script>
-        <script>
-            const lenis = new Lenis({
-                duration: 1.8,
-                easing: (t) => 1 - Math.pow(1 - t, 4),
-                smoothWheel: true,
-                wheelMultiplier: 0.7,
-                touchMultiplier: 1.2,
-            });
-            function raf(time) {
-                lenis.raf(time);
-                requestAnimationFrame(raf);
-            }
+    <script src="https://unpkg.com/lenis@1.3.14/dist/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis({
+            duration: 1.8,
+            easing: (t) => 1 - Math.pow(1 - t, 4),
+            smoothWheel: true,
+            wheelMultiplier: 0.7,
+            touchMultiplier: 1.2,
+        });
+        function raf(time) {
+            lenis.raf(time);
             requestAnimationFrame(raf);
-        </script>
+        }
+        requestAnimationFrame(raf);
+    </script>
         
-
     <script src="script.js"></script>
     <script src="https://cdn.lordicon.com/bhenfmcm.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

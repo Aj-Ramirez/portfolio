@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const result = await response.json();
 
         if (result.success) {
-            alert("✅ Message sent successfully!");
+            // alert("✅ Message sent successfully!");
             form.reset();
         } else {
             alert("❌ Failed to send message.");
@@ -161,19 +161,117 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-//Lord-icon hover base on parent div
-const cards = document.querySelectorAll(".content-card, .contact-item, .service-item, .article-title");
+const cards = document.querySelectorAll(
+  ".content-card, .contact-item, .service-item, .article-title, .title-wrapper, .project-item"
+);
 
 cards.forEach(card => {
-    const icon = card.querySelector("lord-icon");
+  const icon = card.querySelector("lord-icon");
 
-    card.addEventListener("mouseenter", () => {
-        icon.dispatchEvent(new MouseEvent("mouseenter", { bubbles: true }));
-    });
+  if (!icon) return;
 
-    card.addEventListener("mouseleave", () => {
-        icon.dispatchEvent(new MouseEvent("mouseleave", { bubbles: true }));
-    });
+  card.addEventListener("mouseenter", () => {
+    if (document.activeElement !== icon) {
+      icon.dispatchEvent(new Event("mouseenter"));
+    }
+  });
+
+  card.addEventListener("mouseleave", () => {
+    icon.dispatchEvent(new Event("mouseleave"));
+  });
 });
 
 
+const dot = document.querySelector(".cursor-dot");
+const ring = document.querySelector(".cursor-ring");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let ringX = 0;
+let ringY = 0;
+
+document.addEventListener("mousemove", e => {
+
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    dot.style.left = mouseX + "px";
+    dot.style.top = mouseY + "px";
+
+});
+
+function animate(){
+
+    ringX += (mouseX - ringX) * .18;
+    ringY += (mouseY - ringY) * .18;
+
+    ring.style.left = ringX + "px";
+    ring.style.top = ringY + "px";
+
+    requestAnimationFrame(animate);
+
+}
+
+animate();
+
+const hoverItems = document.querySelectorAll(
+    "a, button, .content-card, .service-item, .clients-item, .project-item"
+);
+
+hoverItems.forEach(item=>{
+
+    item.addEventListener("mouseenter",()=>{
+
+        ring.style.width="42px";
+        ring.style.height="42px";
+
+        dot.style.width="20px";
+        dot.style.height="20px";
+
+    });
+
+    item.addEventListener("mouseleave",()=>{
+
+        ring.style.width="28px";
+        ring.style.height="28px";
+
+        dot.style.width="6px";
+        dot.style.height="6px";
+
+    });
+
+});
+
+document.addEventListener("mousedown", () => {
+
+    ring.classList.add("is-clicking");
+    dot.classList.add("is-clicking");
+
+});
+
+document.addEventListener("mouseup", () => {
+
+    ring.classList.remove("is-clicking");
+    dot.classList.remove("is-clicking");
+
+});
+
+
+
+
+
+// a************
+const thoughts = [
+  "Front-End Developer... who just can't stop thinking like a Designer. 😄",
+  "Front-End Developer with a designer hiding in the codebase. 😅",
+  "I build it. I design it. Sometimes I obsess over a 2px alignment. 😆",
+  "Front-End Developer with a rare species of Designer inside. 🦄"
+];
+
+const title = document.querySelector(".fun-title");
+
+title.addEventListener("mouseenter", () => {
+    const random = thoughts[Math.floor(Math.random() * thoughts.length)];
+    title.dataset.thought = random;
+});
