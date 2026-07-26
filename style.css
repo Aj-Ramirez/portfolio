@@ -2471,12 +2471,12 @@ color: var(--accent-color);
    PREMIUM CURSOR
 =================================== */
 
-/* html,
+html,
 body{
 
-    cursor:none;
+    cursor:auto;
 
-} */
+}
 
 .cursor-dot,
 .cursor-ring{
