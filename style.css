@@ -1112,7 +1112,8 @@ textarea.form-input {
     }
     .navbar { border-radius: 0px 0 0 0px; }
     .sidebar.active{min-height: 435px;}
-
+    .avatar-box img { border-radius: 100px; }
+    /* .info-content .title {font-size: clamp(0.6rem, 0.9vw, 1rem);} */
 }
 
 @media (min-width: 450px) {
@@ -1130,7 +1131,7 @@ textarea.form-input {
         padding-top:45px;
     }
     .navbar { border-radius: 0px 0 0 0px; }
-
+    .avatar-box img { border-radius: 100px; }
 }
 
 @media (min-width: 580px) {
@@ -1143,7 +1144,7 @@ textarea.form-input {
         --fs7: 15px;
         --fs8: 12px;
     }
-
+    .avatar-box { border-radius: 100px; }
     .sidebar, article {
         width: 520px;
         margin-inline: auto;
@@ -1346,6 +1347,7 @@ textarea.form-input {
 }
 
 @media (min-width: 768px) {
+    .avatar-box { border-radius: 100px; }
 
     .sidebar, article { width: 700px; }
 
@@ -1736,6 +1738,7 @@ textarea.form-input {
 ========================================== */
 
 @media (max-width: 500px){
+    .avatar-box { border-radius: 100px; }
 
     .testimonials-modal{
 
